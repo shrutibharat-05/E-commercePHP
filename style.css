@@ -1,0 +1,626 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan',sans-serif;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222; 
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222; 
+}
+h4{
+    font-size: 20px;
+    
+    color: #222; 
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+
+}
+.section-p1{
+ padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+body{
+    width: 100%;
+
+}
+#user_php{
+   align-items: center;
+   padding: 1%;
+   text-align: center;
+   display: block;
+   background-color: #041e42;
+   color: #fff;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3F6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06) ;
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left:0;
+}
+#header img{
+    height:100px;
+    width: 100px;
+    background-color: transparent;
+    background: none ;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    /* margin:0px 50px 50px; */
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 30px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 600;
+    color:#1a1a1a ;
+    cursor: pointer;
+    transition:0.3s ease;
+}
+#navbar li a:hover{
+    color: #088178;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+
+#navbar li a.active::after,/*Sudo attribute*/
+#navbar li a:hover::after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+#hero{
+    background-image:url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/hero4.png?raw=true);
+    height:90vh;
+    width:100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding:0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+#hero h4{
+    padding-bottom: 15px;
+
+}
+#hero h1{
+    color:#088178;
+
+}
+#hero button{
+    background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/button.png?raw=true);
+    background-color: transparent;
+    color: #088178;
+    border: none;
+    padding: 16px 80px 16px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border:1px solid #cce7dc;
+    border-radius: 4px;
+    margin: 20px 10px;
+    transition: 1s ease;
+}
+#feature .fe-box:hover{
+    box-shadow: 30px 30px 24px rgba(0,0,0,0.03);
+    border:4px solid #c0e7d8;
+    cursor: pointer;
+    position: static;
+    /* -webkit-animation: forwards;
+    */
+}
+#feature .fe-box{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+    display: inline-block;
+}
+#feature .fe-box:nth-child(2) h6{
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: #d1e8f2;
+}
+#feature .fe-box:nth-child(4) h6{
+    background-color:#cdd4f8;
+}
+#feature .fe-box:nth-child(5) h6{
+    background-color:#f6dbf6;
+}
+#feature .fe-box:nth-child(6) h6{
+    background-color: #fff2e5;
+}
+
+#product1{
+    align-items: center;
+    
+   
+}
+#product1 .section-p1 h2{
+    text-align: center;
+    align-items: center;
+}
+#product1 .section-p1 p{
+    text-align: center;
+    align-items: center;
+}
+#product1 .pro-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+#product1 .pro{
+    width:23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    margin: 10px 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 50px 50px 40px rgba(0,0,0,0.03);
+  
+      transition: 0.1s ease;} 
+#product1 .pro:hover{
+    box-shadow: 5px 5px 5px grey;
+   
+      }
+#product1 .pro img{
+    width: 100%;
+    border-radius: 4px;
+   
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0px;
+}
+#product1 .pro .des1{
+    text-align: center;
+    padding: 10px 0px;
+}
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px ;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243,181,25);
+
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#banner{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b2.jpg?raw=true);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+
+}
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+
+}
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: red;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+#banner button:hover{
+    background-color:#088178;
+    color: #fff;
+}
+#sm-banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+
+    
+}
+#sm-banner .banner-box{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b17.jpg?raw=true);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    margin-left: 0px;
+    padding: 30px;
+    text-align: start;
+
+}
+#sm-banner .banner-box2{
+    background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b10.jpg?raw=true);
+   
+}
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300px;
+
+}
+#sm-banner span{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300px;
+    padding-bottom: 10px;
+}
+#sm-banner h2{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400px;
+    padding-bottom: 15px;
+    
+}
+#sm-banner button{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+#sm-banner .banner-box:hover button{
+    background-color:#088178;
+    color: #fff;
+    border: 1px solid #088178;
+}
+#banner3{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+#banner3 .banner-box{
+
+   
+    /* align-items: flex-start; */
+    justify-content: center;
+    background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b7.jpg?raw=true);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    margin-left: 0px;
+    /* padding: 30px; */
+    text-align: start;
+    margin-bottom: 20px;
+
+
+}
+#banner3 .banner-box:hover{
+    box-shadow: 5px 5px 5px 5px rgb(46, 46, 46);
+    cursor: pointer;
+}
+#banner3 .banner-box2{
+    background-image:url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b4.jpg?raw=true);
+   
+}
+#banner3 .banner-box3{
+    background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b18.jpg?raw=true);
+   
+}
+#banner3 .banner-box h2{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+}
+#banner3 .banner-box h3{
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b14.jpg?raw=true);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+   
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+
+}
+#newsletter p{
+    font-size: 17px;
+    font-weight: 600;
+    color: #818ea0;
+
+}
+#newsletter p span{
+    
+    color: #ffbd27;
+
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+#newsletter .form1{
+    align-items: center;
+}
+#newsletter input{
+    padding: 0 1.25rem;
+    height: 3.25rem;
+    font-size: 14px;
+    border: 1px solid transparent;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #088178;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#newsletter1 button{
+    font-size: 21px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #088178;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#newsetter #new{
+    align-items: center;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+margin-bottom: 30px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+    font-weight: 600;
+
+}
+footer p{
+    font-size: 13px;
+   margin:0 0 8px 0;
+   font-weight: 600;
+  
+}
+footer a{
+    font-size: 13px;
+ margin-bottom: 10px;
+ text-decoration: none;
+ color: #222;
+font-weight: 600;
+    
+}
+footer a:hover{
+    color: #088178 ;
+}
+footer .follow {
+   margin-top: 20px;
+
+    
+}
+footer .follow i{
+    font-size: 14px;
+    padding-bottom: 20px;
+    padding-right: 4px;
+    cursor: pointer;
+    
+}
+footer .install .row img{
+    border: 1px solid #000;
+    border-radius: 6px;
+    
+}
+footer .install img{
+   margin:10px 0 15px 0;
+    
+}
+footer .copy{
+    width: 100%;
+    text-align: center  ;
+}
+
+#page-header{
+    background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b1.jpg?raw=true);
+    height: 40vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+#page-header h2{
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    margin:40px 30px 30px ;
+    padding-top: 40px;
+}
+#page-header p{
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+   padding-bottom: 30px;
+}
+
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    font-weight: 600;
+    padding: 20px 30px;
+}
+
+#blog-header{
+    background-image: url(https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/banner/b19.jpg?raw=true);
+    height: 40vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#blog-header h2{
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    margin:40px 30px 30px ;
+    padding-top: 40px;
+}
+#blog-header p{
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+   padding-bottom: 30px;
+}
+
+@media (max-width:799px) {
+    #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 20px;
+       justify-content: start;
+
+    }   
+}

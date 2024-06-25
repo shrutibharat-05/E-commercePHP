@@ -1,0 +1,174 @@
+<html> 
+<head><style>
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  background-color: black;
+  background-image:url("https://c4.wallpaperflare.com/wallpaper/495/760/53/cuisine-food-india-indian-wallpaper-preview.jpg") ;background-repeat: no-repeat, repeat;
+ background-size: 2000px 809px;
+
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  align-items: center;
+  font-family: poppins;
+}
+.items {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: poppins;
+}
+.items a:link {
+  text-decoration: none;
+  color: white;
+  font-size: 2.10rem;
+  font-weight: bold;
+  font-family: poppins;
+  
+
+}
+a:hover{background:none;
+  outline: 1px solid red;
+  color: white;
+  }
+
+button {
+  font-size: 2rem;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #c31432, #892211);
+  border-radius: 10px;
+  box-shadow: 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 41px;
+  outline: 4px solid red;
+  box-shadow: coral 0px 7px 29px 0px;
+}
+button:hover {
+  background: white;
+  outline: 1px solid red;
+  color: red;
+  border: none;
+}
+.active {
+  color: yellow ;
+  font-family: poppins;
+}
+.container {
+  padding: 16px;
+  
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow:scroll; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+input[type=text], input[type=password], input[type=email]  {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.cancelbtn {
+  width: auto;
+  padding: 5px 5px;
+  background-color: green;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5%  15% ; 
+  border: 1px solid #888;
+  width: 70%; 
+}
+
+</style>
+<body alink="beige" vlink="#eb9b34"><script>
+  var dt= new Date();
+  document.write(Date() );
+</script>
+<header>
+  <nav>
+     <div class="logo">
+      <img src="https://c8.alamy.com/comp/PCYG1J/pizzeria-fast-food-logo-or-label-happy-chef-holding-pizza-and-scapula-in-hands-vector-illustration-PCYG1J.jpg">
+    </div>
+    <div class="items">
+      <a href="first page(login).html" class="active">Home</a>
+      <a href="service.html">Service</a>
+      <a href="aboutus.html" target="_blank">About</a>
+      <a href="contact us.html">Contact</a>
+      <a href="blog1.html">Blog</a>
+    </div>
+  
+   
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" > Log in</button></nav>
+    </header>
+    
+      <div id="id01" class="modal">
+  
+        <form class="modal-content" action="copymain.html" method="post">
+          <div class="imgcontainer">
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNfSQFln1iAL-hllq6596C7UlrH_rWW7ROP8HnvXAgeDd3xgtPOIMl_K_zp57naF-H2hc&usqp=CAU" height=100px" width="100px" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            
+            <input type="text" placeholder="Enter Userid" name="uid" required>
+            
+            
+
+
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            
+            
+            <input type="email" placeholder="Enter your email address" name="add" required >
+      
+      
+           
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            
+            
+              
+            <button type="submit" name="submit">Login</button>
+            
+            
+          </div><font size="5px" color="black">
+         Remember me  <input type="checkbox" checked="checked" name="remember" text-align="left"></font>
+
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" >Cancel</button>
+          </div>
+        </form>
+      </div>
+	  <br>
+	  <center>
+ <img src="Crave__2_-removebg-preview.png">
+</center>
+
+</body><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <a href="historyr.html" target="_blank">history of food in india</a>
+</html>

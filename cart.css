@@ -1,0 +1,58 @@
+/* Style for the cart table */
+.cart-table {
+    /* width: 100%; */
+    border:#ff6347 solid 3px ;
+    margin-bottom: 20px;
+}
+
+/* Style for table headers */
+.cart-table td {
+    background-color: #f2f2f2;
+   
+}
+.profile{
+    background-color:rosybrown;
+}
+
+
+/* table{
+    background-color:rosybrown;
+
+} */
+
+
+/* Style for table rows */
+/* .cart-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+} */
+
+/* Style for table data cells */
+.cart-table td {
+    padding: 8px;
+}
+.cart-table tr {
+    padding: 8px;
+}
+.cart-table th{
+    padding: 8px;
+}
+
+/* Style for product image */
+.cart-table .product-img {
+    width: 100px;
+}
+
+/* Style for remove button */
+.cart-table .remove-btn {
+    background-color: #ff6347; /* Indian Red */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hover effect for remove button */
+.cart-table .remove-btn:hover {
+    background-color: #cc0000; /* Dark Red */
+}
